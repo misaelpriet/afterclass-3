@@ -1,0 +1,47 @@
+/*----- MAIN -----*/
+
+.main .tag{
+    background-color: #a61717;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+.main-top{
+    margin: 30px 20px;
+}
+
+.main-top h1{
+    margin: 12px 0;
+}
+
+.main ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.main li{
+    padding: 10px;
+    margin: 0 5px;
+}
+
+
+@media (min-width: 1044px){
+    /*GRILLA*/
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        grid-template-areas:
+        "main aside"
+        ;
+    }
+
+    main{
+        grid-area: main;
+    }
+    aside{
+        display: block;
+        grid-area: aside;
+    }
+
+}

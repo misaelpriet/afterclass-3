@@ -1,0 +1,29 @@
+/*----- ARTICULO -----*/
+
+.main article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main article img{
+    width: 400px;
+}
+.main article p{
+    width: 400px;
+    margin: auto;
+    margin: 15px 0;
+}
+
+aside{
+    display: none;
+}
+
+@media (min-width: 769px){
+    .main article img{
+        width: 600px;
+    }
+    .main article p{
+        width: 600px;
+    }
+}
