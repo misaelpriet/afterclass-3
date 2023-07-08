@@ -3,6 +3,21 @@
   margin: 0;
   padding: 0; }
 
+.fb {
+  background-color: #3a3ac1; }
+
+.twt {
+  background-color: aquamarine; }
+
+.wpp {
+  background-color: #19a219; }
+
+.mail {
+  background-color: darkred; }
+
+.print {
+  background-color: gray; }
+
 /*----- HEADER -----*/
 .header {
   box-shadow: 0 5px 5px #cecaca;
@@ -29,20 +44,49 @@
   color: #a61717;
   text-decoration: none; }
 
-.fb {
-  background-color: #3a3ac1; }
+@media (min-width: 769px) {
+  .header {
+    align-items: flex-start; }
+  .header img {
+    padding: 0 50px;
+    width: 250px; }
+  .header ul {
+    padding: 0 50px; } }
 
-.twt {
-  background-color: aquamarine; }
+/*----- MAIN -----*/
+.main .tag {
+  background-color: #a61717;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 4px 10px; }
 
-.wpp {
-  background-color: #19a219; }
+.main-top {
+  margin: 30px 20px; }
 
-.mail {
-  background-color: darkred; }
+.main-top h1 {
+  margin: 12px 0; }
 
-.print {
-  background-color: gray; }
+.main ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; }
+
+.main li {
+  padding: 10px;
+  margin: 0 5px; }
+
+@media (min-width: 1044px) {
+  /*GRILLA*/
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-areas: "main aside"; }
+  main {
+    grid-area: main; }
+  aside {
+    display: block;
+    grid-area: aside; } }
 
 /*----- ARTICULO -----*/
 .main article {
@@ -61,6 +105,12 @@
 aside {
   display: none; }
 
+@media (min-width: 769px) {
+  .main article img {
+    width: 600px; }
+  .main article p {
+    width: 600px; } }
+
 /*----- FOOTER -----*/
 .footer {
   background-color: black;
@@ -71,28 +121,3 @@ aside {
 
 .footer p {
   text-align: center; }
-
-@media (min-width: 769px) {
-  .header {
-    align-items: flex-start; }
-  .header img {
-    padding: 0 50px;
-    width: 250px; }
-  .header ul {
-    padding: 0 50px; }
-  .main article img {
-    width: 600px; }
-  .main article p {
-    width: 600px; } }
-
-@media (min-width: 1044px) {
-  /*GRILLA*/
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr .5fr;
-    grid-template-areas: "main aside"; }
-  main {
-    grid-area: main; }
-  aside {
-    display: block;
-    grid-area: aside; } }
